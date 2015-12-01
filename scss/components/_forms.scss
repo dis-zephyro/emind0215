@@ -1,0 +1,58 @@
+.form-control {
+	margin: 0;
+	width: 100%;
+	outline: none;
+	color: #2d2d2d;
+	font-size: 17px;
+	background: #fff;
+	text-align: left;
+	font-weight: 300;
+	line-height: 21px;
+	padding: 7px 10px;
+	font-style: italic;
+	display: inline-block;
+	border: 1px solid #fff;
+	@include placeholder(#bebebe);
+	@include border-radius(4px);
+
+	&::-ms-clear {
+		display: none;
+		width: 0;
+		height: 0;
+	}
+
+	&:focus {
+		@include placeholder(transparent);
+	}
+}
+
+.invalid {
+
+	.form-control {
+		border-color: #ff0000;
+	}
+}
+
+select.form-control {
+	padding-left: 30px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	text-indent: 0.01px;
+	text-overflow: '';
+	-ms-appearance: none;
+	appearance: none!important;
+	background: #fff url("../img/select-arrow.png") 96% 50% no-repeat;
+
+	&::-ms-expand {
+		display: none;
+	}
+}
+
+label {
+	font-weight: 400;
+	display: block;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
