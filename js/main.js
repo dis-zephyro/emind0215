@@ -1,24 +1,14 @@
-/*
+// Header Nav
+
 $(function() {
-    var pull = $('.header-city');
+    var pull = $('.nav-toddle');
     var menu = $(pull.attr("data-target"));
 
     $(pull).on('click', function(e) {
         e.preventDefault();
         menu.slideToggle(0);
     });
-
-    $(document).mouseup(function (e){ // событие клика по веб-документу
-
-        if (!pull.is(e.target) // если клик был не по нашему блоку
-            && pull.has(e.target).length === 0) { // и не по его дочерним элементам
-            menu.hide();
-        }
-    });
 });
-
-*/
-
 
 
 
@@ -43,7 +33,7 @@ DropDown.prototype = {
             var opt = $(this);
             obj.val = opt.text();
             obj.index = opt.index();
-            obj.placeholder.text(obj.val);
+            obj.placeholder.text('Рі. ' + obj.val + ':');
         });
     },
     getValue : function() {
@@ -75,4 +65,21 @@ $(".btn-modal").fancybox({
 
 $('.btn-close').click(function(){
     $.fancybox.close();
+});
+
+var h = $(window).height() + 'px';
+$('.index').css('height', h);
+
+
+$(window).resize(function(){
+
+    var h = $(window).height() + 'px';
+    $('.index').css('height', h);
+
+});
+
+
+
+$(document).ready(function(){
+    $(".content-box-text").mCustomScrollbar();
 });

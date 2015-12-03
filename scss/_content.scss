@@ -22,7 +22,7 @@
 	z-index: 50;
 	background: #fff;
 	position: relative;
-	padding: 40px 50px 10px 50px;
+	padding: 30px 40px 10px 40px;
 	@include border-radius(4px 4px 0 0);
 
 	.row {
@@ -124,7 +124,7 @@
 
 .content {
 	float: left;
-	width: 770px;
+	width: 790px;
 	padding: 0 25px;
 	min-height: 1px;
 }
@@ -135,8 +135,10 @@
 	.reply-image {
 		float: left;
 		width: 100px;
+		max-height: 115px;
 		overflow: hidden;
 		@include border-radius(4px);
+		@include opacity(0.7);
 	}
 
 	p {
@@ -153,15 +155,17 @@
 		font-size: 18px;
 		line-height: 20px;
 		position: relative;
-		padding-bottom: 6px;
-		margin-bottom: 18px;
+		margin-top: -4px;
+		padding-bottom: 4px;
+		margin-bottom: 15px;
 		text-transform: uppercase;
 		border-bottom: 1px solid #ebebeb;
 	}
 
 	.reply-place {
 		right: 0;
-		top: 3px;
+		top: 0px;
+		color: #898b8e;
 		font-size: 13px;
 		line-height: 20px;
 		position: absolute;
