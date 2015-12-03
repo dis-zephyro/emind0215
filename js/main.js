@@ -24,10 +24,10 @@ DropDown.prototype = {
     initEvents : function() {
         var obj = this;
 
-        obj.dd.on('click', function(event){
-            $(this).toggleClass('active');
-            return false;
-        });
+    //    obj.dd.on('click', function(event){
+    //        $(this).toggleClass('active');
+    //       return false;
+    //    });
 
         obj.opts.on('click',function(){
             var opt = $(this);

@@ -1,0 +1,25 @@
+.slogan,
+.red-box {
+	opacity: 0;
+}
+
+
+.slogan {
+	-webkit-animation: bounceInLeft 1s 1s forwards;
+	animation: bounceInLeft 1s 1s forwards;
+}
+
+.red-box {
+	-webkit-animation: bounceInLeft 1s 1.5s forwards;
+	animation: bounceInLeft 1s 1.5s forwards;
+}
+
+
+.reply-box {
+	opacity: 0;
+}
+
+.reply-box {
+	-webkit-animation: bounceInLeft 1s .5s forwards;
+	animation: bounceInLeft 1s .5s forwards;
+}

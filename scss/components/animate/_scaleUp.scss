@@ -1,0 +1,26 @@
+@keyframes scaleUp {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform:scale(1);
+		opacity:1;
+	}
+
+}
+
+@-webkit-keyframes scaleUp {
+	0%   {
+		-webkit-transform: scale(0);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		opacity:1;
+	}
+
+}
+
+.scaleUp {
+	-webkit-animation-name: scaleUp;
+	animation-name: scaleUp;
+}
