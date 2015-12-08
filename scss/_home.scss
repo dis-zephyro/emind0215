@@ -159,7 +159,7 @@
 .content-box {
 	color: #fff;
 	right: 120px;
-	bottom: 125px;
+	bottom: 180px;
 	width: 550px;
 	height: 370px;
 	font-size: 17px;
@@ -186,7 +186,6 @@
 	}
 }
 
-
 .mCSB_scrollTools {
 
 	.mCSB_draggerRail {
@@ -199,6 +198,36 @@
 		.mCSB_dragger_bar {
 			width: 9px;
 			background-color: rgba(255,255,255,.5);
+		}
+	}
+}
+
+.page-nav {
+	right: 160px;
+	bottom: 80px;
+	width: 78px;
+	height: 68px;
+	position: absolute;
+
+	.page-nav-item {
+		width: 34px;
+		height: 68px;
+		cursor: pointer;
+		display: block;
+		background: url("../img/page-nav.png") no-repeat;
+
+		&.prev {
+			float: left;
+			background-position: 0 0;
+		}
+
+		&.next {
+			float: right;
+			background-position: -44px 0;
+		}
+
+		&:hover {
+			background-color: rgba(17,17,17, 0.4);
 		}
 	}
 }
